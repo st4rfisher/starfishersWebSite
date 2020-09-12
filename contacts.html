@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="contacts.css"/>
+    <title>Мой сайт-визитка</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container">
+        <div class="logo"><a><img src="icons\logo.png"></a></div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О себе</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="contacts-content">
+            <h1 class="content-title">Контакты</h1>
+            
+            <h2>Телефон</h2>
+            <div class="phone">
+                <span>8(999)921-91-09</span> 
+                <span>(ежедневно с 10:00 до 18:00)</span>
+            </div>
+
+            <h2>Email</h2>
+            <span>vladokforever@yandex.ru</span>
+
+            <h2>В контакте</h2>
+            <span>https://vk.com/starf1sher</span>
+
+            <h2>Телеграм</h2>
+            <span>@st4rfisher</span>
+        </section>
+        <section class="mail-form">
+            <form action="" method="post" id="reply">
+                <fieldset>  
+                    <div class="legend">Написать письмо</div>
+                    <div class="form_row">
+                        <div class="form_property form_required">
+                            <label for="name"> Ваше имя </label>
+                        </div>
+                        <div class="form_value">
+                            <input type="text" size="32" name="name" value="" class="text" id="name" />
+                        </div>
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_property">
+                            <label for="email">Ваш email</label>
+                        </div>
+                        <div class="form_value">
+                            <input type="text" size="32" name="email" value="" class="text" id="email" />
+                        </div>
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_property form_required">
+                            <label for="comment">Сообщение</label>
+                        </div>
+                        <div class="form_value">
+                            <textarea rows="10" cols="46" name="text" id="comment"></textarea>
+                        </div>
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                    <div class="form_row form_row_submit">
+                        <div class="form_value">
+                            <input type="submit" class="button" value="Отправить »" />
+                        </div>
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="contacts">
+          <ul>
+            <li><a href="tg://resolve?domain=st4rfisher"><img src="icons/telegram.svg" alt="Телеграмм" width="25px" height="25px"><span>@st4rfisher</span></a></li>
+            <li><a href="https://vk.com/starf1sher"><img src="icons/vk.svg" alt="Телеграмм" width="25px" height="25px"><span>vk.com/starf1sher</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О себе</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      
+    </footer>
+    <script src="gallery/gallery.js">
+    </script>
+  </body>
+</html>
