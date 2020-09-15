@@ -1,7 +1,13 @@
+.contacts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .contacts-content {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 20px 100px 100px;
     min-height: 560px;
 }
 
@@ -21,6 +27,59 @@ h2 {
 
 .phone {
     display: flex;
+}
+
+.mail-form {
+    
+    padding: 100px; 
+}
+
+.contact-form fieldset{
+    border: none;
+}
+
+input[type=text], .contact-form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    background-color: rgba(234, 233, 242, 0.6);
+}
+
+.contact-form textarea {
+    resize: none;
+    max-width: 500px;
+}
+
+input[type=text]:focus, textarea:focus{
+    background-color: #fff;
+    outline: none;
+}
+
+.button {
+    position: relative;
+    border: none;
+    background-color: #eae9f2;
+    padding: 1em; 
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+.button:hover { 
+    background-color: #79797e;
+    color: #fff;
+    transition: .5s;
+  }
+  
+
+.button:active {
+  outline: none;
+  top: .1em;
+  left: .1em;
+  box-shadow: none;
+  background-color: #eae9f2;
+  transition: .1s;
 }
 
 

@@ -21,7 +21,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
+      <div class="container contacts-container">
         <section class="contacts-content">
             <h1 class="content-title">Контакты</h1>
             
@@ -41,44 +41,31 @@
             <span>@st4rfisher</span>
         </section>
         <section class="mail-form">
-            <form action="handler.php" method="post" id="reply">
+            <form action="" method="post" id="reply" class="contact-form">
                 <fieldset>  
-                    <div class="legend">Написать письмо</div>
-                    <div class="form_row">
-                        <div class="form_property form_required">
-                            <label for="name"> Ваше имя </label>
-                        </div>
-                        <div class="form_value">
-                            <input type="text" size="32" name="name" value="" class="text" id="name" />
-                        </div>
-                        <div class="clearer">&nbsp;</div>
+                <div class="legend"><h1>Написать письмо</h1></div>
+                    <div class="form-row">                   
+                        <input type="text" size="32" name="name" value="" placeholder="Ваше имя" class="text" id="name" required/>
                     </div>
-                    <div class="form_row">
-                        <div class="form_property">
-                            <label for="email">Ваш email</label>
-                        </div>
-                        <div class="form_value">
-                            <input type="text" size="32" name="email" value="" class="text" id="email" />
-                        </div>
-                        <div class="clearer">&nbsp;</div>
+
+                    <div class="form-row">
+                        <input type="text" size="32" name="email" value="" placeholder="Ваш Email" class="text" id="email" required/>
                     </div>
-                    <div class="form_row">
-                        <div class="form_property form_required">
-                            <label for="comment">Сообщение</label>
-                        </div>
-                        <div class="form_value">
-                            <textarea rows="10" cols="46" name="text" id="comment"></textarea>
-                        </div>
-                        <div class="clearer">&nbsp;</div>
+                    
+                    <div class="form-row">
+                        <textarea rows="10" cols="80" name="text" id="comment" placeholder="Ваше письмо"></textarea>
                     </div>
+                        
+                   
                     <div class="form_row form_row_submit">
-                        <div class="form_value">
-                            <input type="submit" class="button" value="Отправить »" />
-                        </div>
-                        <div class="clearer">&nbsp;</div>
+                        
+                            <input type="submit" class="button" value="Отправить" />
+                        
+    
                     </div>
                 </fieldset>
-            </form>
+            
+              </form>
         </section>
       </div>
     </main>
@@ -94,9 +81,9 @@
         </div>
         <div class="footer-nav">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О себе</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О себе</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
       

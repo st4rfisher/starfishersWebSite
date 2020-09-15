@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="gallery/gallery.css"/>
     <title>Мой сайт-визитка</title>
   </head>
   <body class="page">
     <header class="header">
       <div class="container">
-        <div class="logo"><a><img src="icons\logo.png"></a></div>
+        <div class="logo">
+          <a><img src="icons\logo.png"></a>
+        </div>
         <nav class="menu">
           <ul>
             <li><a href="index.html">Главная</a></li>
@@ -22,35 +25,43 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="content">
+        <section class="meeting">
           <div class="gallery">
-              <div class="full-photo-container">
-                <img class="full-photo" src="gallery/photo-1.jpg"  width="auto" height="367" alt="Большое фото">
+
+            <div class="sliders">
+              <div class="left-slider">
+                <img src="icons/Left slider.svg" alt="Переключатель влево" id="left-slider"/>
               </div>
-              <div class="photo-previews-container">
-                <button class="photo-preview" type="button">
-                  <img src="gallery/photo-preview-1.jpg" alt="Превью 1">
-                </button>
-                <button class="photo-preview" type="button">
-                  <img src="gallery/photo-preview-2.jpg" alt="Превью 2">
-                </button>
-                <button class="photo-preview" type="button">
-                  <img src="gallery/photo-preview-3.jpg" alt="Превью 3">
-                </button>
-                <button class="photo-preview" type="button">
-                  <img src="gallery/photo-preview-4.jpg" alt="Превью 4">
-                </button>
+
+              <div class="rigth-slider">
+                <img src="icons/Right slider.svg" alt="Переключатель вправо" id="right_arrow"/>
               </div>
+            </div>
+            
+            <div class="gallery-box">
+                <div class="full-image-container">
+                  <img src="gallery/photo-1.jpg" class="full-image" id="mainImage"/>
+                </div>
+              
+                <div class="thumbnails">
+                  <img src="gallery/photo-preview-1.jpg" class="thumbnail active" data-full-url="gallery/photo-1.jpg" />
+                  <img src="gallery/photo-preview-2.jpg" class="thumbnail" data-full-url="gallery/photo-2.jpg" />
+                  <img src="gallery/photo-preview-3.jpg" class="thumbnail" data-full-url="gallery/photo-3.jpg" />
+                  <img src="gallery/photo-preview-4.jpg" class="thumbnail" data-full-url="gallery/photo-4.jpg" />
+                  
+                </div>
+            </div>
           </div>
-          <div class="greeting-content">
+          <div class="meeting-content">
             
               <h2 class="content-title">Приветствую!</h2>
               <p>
-                Меня зовут Владислав. Вы находитесь на моем сайте-визитке, который я сверстал сам. 
-                Я начинающий веб-разработчик. 
+                Меня зовут Владислав. Я начинающий веб-разработчик. Вы находитесь на моем сайте-визитке, который я сверстал сам. 
+                
               </p>
               <p>
-                На вкладке "О себе" вы можете подробнее узнать о моих увлечениях.
+                Во вкладке "О себе" вы можете подробнее узнать о моих увлечениях, а также моем прошлом опыте работы 
+                и моих мыслях по этому поводу.
               </p>
               <p>
                 К пониманию того, что мне интересна сфера веб-разработки я пришел не сразу, а 
@@ -60,22 +71,25 @@
               <h2 class="content-title">О навыках</h2>
               <p>
                 На протяжении года и до настоящего момента я занимаюсь самообразованием и изучаю сферу 
-                веб-разработки. В связи с этим, изучил некоторые навыки:
+                веб-разработки. В связи с этим изучил основные языки верстки и усвоил некоторые навыки:
               </p> 
               <ul class="skills-list"> 
-                <li><span>Знаю HTML5</span></li>
-                <li><span>CSS3 на уровне выше среднего.</span>
+                <li><span>Знаю HTML5;</span></li>
+                <li><span>CSS3 на среднем уровне;</span>
                     <br> 
                     <span>Хорошо ориентируюсь в типах селекторов</span></li>
                 <li><span>Знаком с адаптивной версткой, в том числе и на флексбоксах.</span>
                     <br> 
-                    <span>В процессе изучения grid-верстки. Знаю семантическую верстку</span></li> 
-                <li><span>Знаком с препроцессором Less</span></li> 
+                    <span>В процессе изучения grid-верстки. Знаю семантическую верстку;</span></li> 
+                <li><span>Знаком с препроцессором Less (на стадии изучения);</span></li> 
                 <li><span>Начальные знания JavaScript</span></li> 
                 <li><span>Знаю Figma, но опыта работы в этой программе не имею</span></li>        
               </ul>
               
               <h2 class="content-title">Ожидания от работы</h2>
+              <p>
+
+              </p>
               <p>
                 В работе я ценю возможность расти как финансово, так и профессионально. Получение опыта и знаний, 
                 как от коллег, так и от работы в целом приоритетнее финансового достатка. Также немаловажным аспектом 
@@ -100,14 +114,14 @@
         </div>
         <div class="footer-nav">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О себе</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О себе</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
       
     </footer>
-    <script src="gallery/gallery.js">
+    <script src="gallery/gallery.js"></script>
     </script>
   </body>
 </html>
