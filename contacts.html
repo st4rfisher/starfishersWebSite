@@ -45,15 +45,15 @@
                 <fieldset>  
                 <div class="legend"><h1>Написать письмо</h1></div>
                     <div class="form-row">                   
-                        <input type="text" size="32" name="name" value="" placeholder="Ваше имя" class="text" id="name" required/>
+                        <input type="text" size="32" name="name" value="" pattern="[А-Яа-я]{1,30}" placeholder="Ваше имя" title="Используйте русский алфавит, строчные или заглавные буквы" class="text" id="name" required/>
                     </div>
 
                     <div class="form-row">
-                        <input type="text" size="32" name="email" value="" placeholder="Ваш Email" class="text" id="email" required/>
+                        <input type="email" size="32" name="email" value="" pattern="\S+@[a-z]+.[a-z]+" placeholder="Ваш Email" class="text" id="email" required/>
                     </div>
                     
                     <div class="form-row">
-                        <textarea rows="10" cols="80" name="text" id="comment" placeholder="Ваше письмо"></textarea>
+                        <textarea rows="10" cols="80" name="text" id="comment" maxlength="1000" placeholder="Ваше письмо"></textarea>
                     </div>
                         
                    
